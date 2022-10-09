@@ -34,6 +34,14 @@ elif dec=='3':
 elif dec=='4':
         num1 = float(input('insert your first number:'))
         num2 = float(input('insert your second number: '))
+        if num1 == 0:
+                print('You can`t divide zero')
+                quit()
+        if num2 == 0:
+                print('you can`t divide by zero')
+                quit()
+                
+
         res = num1 / num2 
         print('Result: '+ str(res))
 elif dec=='5':
